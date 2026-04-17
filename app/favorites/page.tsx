@@ -40,6 +40,7 @@ export default function FavoritesPage() {
             border: "1px solid #e5e5e5",
             borderRadius: "14px",
             backgroundColor: "#fafafa",
+            color: "#111111",
           }}
         >
           <p style={{ fontSize: "16px" }}>No favorites saved yet.</p>
@@ -61,6 +62,7 @@ export default function FavoritesPage() {
                 borderRadius: "14px",
                 padding: "14px",
                 backgroundColor: "#fff",
+                color: "#111111",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
               }}
             >
@@ -79,7 +81,9 @@ export default function FavoritesPage() {
                     marginBottom: "12px",
                   }}
                 />
-                <h3 style={{ fontSize: "18px", lineHeight: "1.4" }}>{recipe.strMeal}</h3>
+                <h3 style={{ fontSize: "18px", lineHeight: "1.4" }}>
+                  {recipe.strMeal}
+                </h3>
               </Link>
 
               <button

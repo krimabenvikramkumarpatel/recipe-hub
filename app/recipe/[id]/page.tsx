@@ -40,7 +40,9 @@ export default async function RecipeDetailsPage({
   return (
     <main style={{ padding: "30px", maxWidth: "1000px", margin: "0 auto" }}>
       <section style={{ marginBottom: "30px" }}>
-        <h1 style={{ fontSize: "38px", marginBottom: "12px" }}>{recipe.strMeal}</h1>
+        <h1 style={{ fontSize: "38px", marginBottom: "12px" }}>
+          {recipe.strMeal}
+        </h1>
         <p style={{ color: "#555", fontSize: "17px" }}>
           Explore recipe details, ingredients, and cooking steps.
         </p>
@@ -79,6 +81,7 @@ export default async function RecipeDetailsPage({
         <div
           style={{
             backgroundColor: "#fafafa",
+            color: "#111111",
             padding: "24px",
             borderRadius: "16px",
             border: "1px solid #e5e5e5",
@@ -92,7 +95,9 @@ export default async function RecipeDetailsPage({
             <strong>Area:</strong> {recipe.strArea}
           </p>
 
-          <h2 style={{ marginTop: "10px", marginBottom: "15px" }}>Ingredients</h2>
+          <h2 style={{ marginTop: "10px", marginBottom: "15px" }}>
+            Ingredients
+          </h2>
           <ul style={{ paddingLeft: "20px", lineHeight: "1.8" }}>
             {ingredients.map((item, index) => (
               <li key={index}>{item}</li>
@@ -105,6 +110,7 @@ export default async function RecipeDetailsPage({
         style={{
           marginTop: "35px",
           backgroundColor: "#fff",
+          color: "#111111",
           padding: "24px",
           borderRadius: "16px",
           border: "1px solid #e5e5e5",
@@ -120,6 +126,7 @@ export default async function RecipeDetailsPage({
         style={{
           marginTop: "35px",
           backgroundColor: "#fff",
+          color: "#111111",
           padding: "24px",
           borderRadius: "16px",
           border: "1px solid #e5e5e5",
